@@ -1,0 +1,29 @@
+{% load mptt_tags %}
+
+{% block categories %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <div class="col-lg-3">
+        <h1 class="h2 pb-4">Categories</h1>
+        <ul class="list-unstyled templatemo-accordion">
+            {% recursetree category %}
+            <li class="pb-3">
+                <a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="#">
+                    {{ node.title }}
+                </a>
+                {% if not node.is_leaf_node %}
+                <ul class="collapse show list-unstyled pl-3">
+                    <li>
+                        <a class="children" href="#">{{ children }}</a>
+                    </li>
+                </ul>
+                {% endif %}
+            </li>
+            {% endrecursetree %}
+        </ul>
+    </div>
+</head>
+</html>
+{% endblock %}

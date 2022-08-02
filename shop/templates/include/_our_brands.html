@@ -1,0 +1,124 @@
+ {% block our_brands %}
+ {% load static %}
+    <section class="bg-light py-5">
+        <div class="container my-4">
+            <div class="row text-center py-3">
+                <div class="col-lg-6 m-auto">
+                    <h1 class="h1">All brands which are represented on our WebSite</h1>
+                    <p>
+                       Tap the icon if you want to visit the official websites of the cooperation companies!
+                    </p>
+                </div>
+                <div class="col-lg-9 m-auto tempaltemo-carousel">
+                    <div class="row d-flex flex-row">
+                        <!--Controls-->
+                        <div class="col-1 align-self-center">
+                            <a class="h1" href="#multi-item-example" role="button" data-bs-slide="prev">
+                                <i class="text-light fas fa-chevron-left"></i>
+                            </a>
+                        </div>
+                        <!--End Controls-->
+
+                        <!--Carousel Wrapper-->
+                        <div class="col">
+                            <div class="carousel slide carousel-multi-item pt-2 pt-md-0" id="multi-item-example" data-bs-ride="carousel">
+                                <!--Slides-->
+                                <div class="carousel-inner product-links-wap" role="listbox">
+
+                                    <!--First slide-->
+                                    <div class="carousel-item active">
+                                        <div class="row">
+                                            <div class="col-3 p-md-5 on">
+                                                <script>
+                                                  function myFunctionPuma() {
+                                                   window.open("https://ru.puma.com/");
+                                                  }
+                                                </script>
+                                                <a href="#"><img class="img-fluid brand-img" src="{% static 'img/Puma-Logo-Transparent-Background (1).png' %}" alt="Brand Logo" onclick="myFunctionPuma()"></a>
+                                            </div>
+                                            <div class="col-3 p-md-5">
+                                                <script>
+                                                  function myFunctionAdidas() {
+                                                   window.open("https://www.adidas.ru/");
+                                                  }
+                                                </script>
+                                                <a href="https://www.adidas.ru/"><img class="img-fluid brand-img" src="{% static 'img/brand_02.png' %}" alt="Brand Logo" onclick="myFunctionAdidas()"></a>
+                                            </div>
+                                            <div class="col-3 p-md-5">
+                                                 <script>
+                                                  function myFunctionNike() {
+                                                   window.open("https://www.nike.com/ru/");
+                                                  }
+                                                </script>
+                                                <a href="https://www.nike.com/ru/"><img class="img-fluid brand-img" src="{% static 'img/brand_03.png' %}" alt="Brand Logo" onclick="myFunctionNike()"></a>
+                                            </div>
+                                            <div class="col-3 p-md-5">
+                                                  <script>
+                                                  function myFunctionReebok() {
+                                                   window.open("https://www.reebok.ru/");
+                                                  }
+                                                </script>
+                                                <a href="https://www.reebok.ru/"><img class="img-fluid brand-img" src="{% static 'img/Reebok-Logo-Transparent-Background (1).png' %}" alt="Brand Logo" onclick="myFunctionReebok()"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--End First slide-->
+
+                                    <!--Second slide-->
+                                    <div class="carousel-item">
+                                        <div class="row">
+                                            <div class="col-3 p-md-5">
+                                                <a href="#"><img class="img-fluid brand-img" src="{% static 'img/Puma-Logo-Transparent-Background (1).png' %}" alt="Brand Logo" onclick="myFunctionPuma()"></a>
+                                            </div>
+                                           <div class="col-3 p-md-5">
+                                                <a href="https://www.adidas.ru/"><img class="img-fluid brand-img" src="{% static 'img/brand_02.png' %}" alt="Brand Logo" onclick="myFunctionAdidas()"></a>
+                                            </div>
+                                            <div class="col-3 p-md-5">
+                                                <a href="https://www.nike.com/ru/"><img class="img-fluid brand-img" src="{% static 'img/brand_03.png' %}" alt="Brand Logo" onclick="myFunctionNike()"></a>
+                                            </div>
+                                           <div class="col-3 p-md-5">
+                                                <a href="https://www.reebok.ru/"><img class="img-fluid brand-img" src="{% static 'img/Reebok-Logo-Transparent-Background (1).png' %}" alt="Brand Logo" onclick="myFunctionReebok()"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--End Second slide-->
+
+                                    <!--Third slide-->
+                                    <div class="carousel-item">
+                                        <div class="row">
+                                            <div class="col-3 p-md-5">
+                                                <a href="#"><img class="img-fluid brand-img" src="{% static 'img/Puma-Logo-Transparent-Background (1).png' %}" alt="Brand Logo" onclick="myFunctionPuma()"></a>
+                                            </div>
+                                            <div class="col-3 p-md-5">
+                                                <a href="https://www.adidas.ru/"><img class="img-fluid brand-img" src="{% static 'img/brand_02.png' %}" alt="Brand Logo" onclick="myFunctionAdidas()"></a>
+                                            </div>
+                                            <div class="col-3 p-md-5">
+                                                <a href="https://www.nike.com/ru/"><img class="img-fluid brand-img" src="{% static 'img/brand_03.png' %}" alt="Brand Logo" onclick="myFunctionNike()"></a>
+                                            </div>
+                                            <div class="col-3 p-md-5">
+                                                <a href="https://www.reebok.ru/"><img class="img-fluid brand-img" src="{% static 'img/Reebok-Logo-Transparent-Background (1).png' %}" alt="Brand Logo" onclick="myFunctionReebok()"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--End Third slide-->
+
+                                </div>
+                                <!--End Slides-->
+                            </div>
+                        </div>
+                        <!--End Carousel Wrapper-->
+
+                        <!--Controls-->
+                         <div class="col-1 align-self-center">
+                            <a class="h1" href="#multi-item-example" role="button" data-bs-slide="next">
+                                <i class="text-light fas fa-chevron-right"></i>
+                            </a>
+                        </div>
+                        <!--End Controls-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Brands-->
+ {% endblock %}
